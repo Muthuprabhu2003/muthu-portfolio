@@ -1,0 +1,17 @@
+:root {
+  --bg-dark: #0b0f19;
+  --bg-card: rgba(255, 255, 255, 0.08);
+  --text-primary: #ffffff;
+  --text-secondary: #b8b8b8;
+  --accent: #6c63ff;
+  --radius: 14px;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --bg-dark: #f5f6fa;
+  --bg-card: #ffffff;
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --accent: #6c63ff;
+}

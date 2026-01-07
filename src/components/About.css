@@ -1,0 +1,75 @@
+.about {
+  background: linear-gradient(
+    to right,
+    rgba(108, 99, 255, 0.05),
+    transparent
+  );
+}
+
+.section-title {
+  color: var(--accent);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.about-text h2 span {
+  color: var(--accent);
+}
+
+.about-text p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  max-width: 600px;
+}
+
+.about-cards {
+  display: grid;
+  gap: 20px;
+}
+
+.about-card {
+  background: var(--bg-card);
+  padding: 25px;
+  border-radius: var(--radius);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(108, 99, 255, 0.15);
+}
+
+.about-card h4 {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.about-card p {
+  color: var(--text-secondary);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+}
